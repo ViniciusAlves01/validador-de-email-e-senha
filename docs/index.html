@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Validador de E-mail e Senha</title>
+   <link rel="stylesheet" href="index.css">
+   <script src="index.js" defer></script>
+</head>
+<body>
+   <main>
+      <h1>Cadastre-se</h1>
+      <h3>Insira alguns dados para se cadastrar</h3>
+      <form action="#">
+         <label for="name">Nome e Sobrenome*</label>
+         <input type="text" id="name" class="inputs" autocomplete="name" placeholder="Ex: João da Silva" required>
+         <span id="name-error"></span>
+         <label for="email">E-mail*</label>
+         <span id="email-error"></span>
+         <input type="email" id="email" class="inputs" autocomplete="email" placeholder="Ex: joao@email.com" required>
+         <label for="password">Senha*</label>
+         <span id="password-error"></span>
+         <input type="password" id="password" class="inputs" autocomplete="off" placeholder="Sua nova senha" required>
+         <ul>
+            <li id="upperCase">Pelo menos uma letra maiúscula</li>
+            <li id="numberOfCharacters">Pelo menos 8 caracteres</li>
+            <li id="lowerCase">Pelo menos uma letra minúscula</li>
+            <li id="number">Pelo menos um número</li>
+            <li id="especial">Pelo menos um caractere especial</li>
+         </ul>
+         <p>* Campos obrigatórios</p>
+         <button type="submit" id="button">Continuar</button>
+      </form>
+   </main>
+</body>
+</html>
