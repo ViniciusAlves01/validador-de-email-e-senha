@@ -13,7 +13,7 @@ function validatePassword(password) {
        !password.match(/[0-9]/) ||
        !password.match(/[^a-zA-Z0-9\s]/)
    ) {
-       const err = new Error('Senha inválida. Atenda aos requisitos abaixo')
+       const err = new Error('Senha inválida. Atenda aos requisitos abaixo.')
        err.input = 'password'
        throw err
    }
