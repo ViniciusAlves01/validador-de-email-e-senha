@@ -58,7 +58,7 @@ password.addEventListener('input', updatePasswordRequiremets)
 form.addEventListener('submit', (ev) =>{
    ev.preventDefault()
 
-   body.children[1].remove()
+   
    resetFormStyles()
 
    try {
